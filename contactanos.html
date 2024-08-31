@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incio</title>
+</head>
+
+<body>
+  <!-- comentarios-->
+  <header>
+    <nav>
+      <a href="index.html">INICIO</a>
+      <a href="Nosotros.html">NOSOTROS</a>
+      <a href="Servicios.html">SERVICIOS</a>
+      <a href="Galeria.html">GALERIA</a>
+      <a href="Contacto.html">CONTACTANOS</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Nuestros números de contacto</h1>
+    <img src="imagenes/wsp.png" alt="">
+    <h2>3133625596</h2>
+    <h2>3003828340</h2>
+    <img src="imagenes/logoface.png" alt="">
+    <h2> @laprofecheche </h2>
+    <p> Si estas interesado por favor ingresa los siguientes datos </p>
+    <!--Formuario de contacto-->
+    <form action="index.html" method="get" enctype="multipart/form-data">
+      <div>
+        <label for="nombre"> Nombre: </label>
+        <input type="text" name="nombre" placeholder="Ingrese su
+nombre" minlength="10" maxlength="30" required pattern="^[0-9]*$" id="nombre">
+      </div>
+      <div>
+        <input type="number" name="Estatura" required step="0.5">
+      </div>
+      <div>
+        <input type="color">
+      </div>
+      <div>
+        <input type="checkbox" name="tipo[]" id="html">
+        <label for="html">HTML</label>
+      </div>
+      <div>
+        <input type="checkbox" name="tipo[]" id="CSS">
+        <label for="CSS">CSS</label>
+      </div>
+      <div>
+        <input type="checkbox" name="tipo[]" id="JavaScript">
+        <label for="JavaScript">JavaScript</label>
+      </div>
+      <div>
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" id="hombre">
+      </div>
+      <div>
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="genero" id="mujer">
+      </div>
+      <div>
+        <label for="otro">Otro</label>
+        <input type="radio" name="genero" id="otro">
+      </div>
+      <div>
+        <label for="Ciudad">Ciudad</label>
+        <select name="Ciudad" id="Ciudad">
+          <option value="Bucaramanga">Bucaramanga</option>
+          <option value="Bogotá">Bogotá</option>
+          <option value="Cali">Cali</option>
+          <option value="Medellín">Medellín</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <input type="date">
+      <br>
+      <br>
+      <div>
+        <input type="file" name="file" id="file">
+      </div>
+      <div>
+        <button>Enviar</button>
+      </div>
+      <div>
+        <textarea name="mensaje" id="mensaje" rows="20"></textarea>
+      </div>
+    </form>
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>
